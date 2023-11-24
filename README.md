@@ -1,6 +1,6 @@
 
 
-### Olá! Eu sou o Fabricio Pereira 😁
+### Oiii! Eu sou o Fabricio Pereira 
 
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/_fabriciop3/?next=%2F)
 
@@ -9,7 +9,7 @@
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fabricio-pereira-333b6b24b/)
 
 
-### Tecnologias usadas diariamente 👇
+### Tecnologias usadas diariamente 
 
 ![Fabricio GitHub stats](https://github-readme-stats.vercel.app/api?username=fabricio-dev-front&show_icons=true&theme=dracula)
 
