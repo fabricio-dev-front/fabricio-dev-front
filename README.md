@@ -12,7 +12,7 @@ Além das hard skills, valorizo minhas **soft skills** como **foco, proatividade
     
 ### 🤖 Tech Stack
 
-[![My Skills](https://skillicons.dev/icons?i=js,html,css,react,nextjs,ts,tailwind,git,github,figma,linkedin,notion,obsidian)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,react,nextjs,ts,tailwind,git,github,figma,linkedin,notion,obsidian)](https://skillicons.dev)
 
 </div>
 
