@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 160" width="1200" height="160" role="img" aria-label="Entrar em contato">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowBig" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="btn" x1="0" x2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="0.5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#e879f9"/>
+      <animateTransform attributeName="gradientTransform" type="rotate" values="0 .5 .5;360 .5 .5" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="side" gradientUnits="userSpaceOnUse" x1="60" x2="320" y1="0" y2="0"><stop offset="0" stop-color="#22d3ee" stop-opacity="0"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <linearGradient id="side2" gradientUnits="userSpaceOnUse" x1="1140" x2="880" y1="0" y2="0"><stop offset="0" stop-color="#e879f9" stop-opacity="0"/><stop offset="1" stop-color="#e879f9"/></linearGradient>
+  </defs>
+  <line x1="60" x2="320" y1="80.0" y2="80.0" stroke="url(#side)" stroke-width="2"/>
+  <line x1="880" x2="1140" y1="80.0" y2="80.0" stroke="url(#side2)" stroke-width="2"/>
+  <rect x="340" y="42" width="520" height="76" rx="38" fill="url(#btn)" opacity="0.35" filter="url(#glowBig)">
+    <animate attributeName="opacity" values="0.2;0.6;0.2" dur="2.4s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="340" y="42" width="520" height="76" rx="38" fill="#0b0620" stroke="url(#btn)" stroke-width="3"/>
+  <rect x="340" y="42" width="520" height="76" rx="38" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="90 1192" filter="url(#glow)">
+    <animate attributeName="stroke-dashoffset" values="0;-1192" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <text x="600.0" y="89.0" text-anchor="middle" font-family="'JetBrains Mono','Fira Code',Consolas,'DejaVu Sans Mono','Courier New',monospace" font-size="26" font-weight="800" letter-spacing="4" fill="#fff" filter="url(#glow)">ENTRAR EM CONTATO
+    <tspan fill="#22d3ee">▸<animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite"/></tspan>
+  </text>
+</svg>

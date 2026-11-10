@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 64" width="1200" height="64" role="img" aria-label="SOBRE_MIM">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowBig" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="ln" gradientUnits="userSpaceOnUse" x1="262.2" x2="1180" y1="0" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect width="1200" height="64" rx="12" fill="#0b0620"/>
+  <rect x="1" y="1" width="1198" height="62" rx="12" fill="none" stroke="#22d3ee" stroke-opacity="0.3"/>
+  <g font-family="'JetBrains Mono','Fira Code',Consolas,'DejaVu Sans Mono','Courier New',monospace" font-weight="800" transform="translate(16 0)">
+    <path d="M6 14 L26 32 L6 50" fill="none" stroke="#22d3ee" stroke-width="4" filter="url(#glow)">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+    <text x="44" y="43" font-size="33" fill="#e879f9" opacity="0.7" textLength="178.2" lengthAdjust="spacingAndGlyphs">SOBRE_MIM
+      <animateTransform attributeName="transform" type="translate" values="0 0;3 0;-2 0;0 0;0 0" keyTimes="0;0.04;0.08;0.12;1" calcMode="discrete" dur="3.5s" repeatCount="indefinite"/>
+    </text>
+    <text x="44" y="43" font-size="33" fill="#f8fafc" filter="url(#glow)" textLength="178.2" lengthAdjust="spacingAndGlyphs">SOBRE_MIM
+      <animate attributeName="opacity" values="1;0.4;1;1" keyTimes="0;0.03;0.06;1" dur="3.5s" repeatCount="indefinite"/>
+    </text>
+  </g>
+  <line x1="262.2" x2="1180" y1="33" y2="33" stroke="url(#ln)" stroke-width="2"/>
+  <circle cy="33" r="4" fill="#22d3ee" filter="url(#glow)">
+    <animate attributeName="cx" values="262.2;1180" dur="2.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+</svg>

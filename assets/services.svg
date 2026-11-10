@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 455" width="1200" height="455" role="img" aria-label="Produtos web, Interfaces, Full Stack, IA e Agents, Automação, Performance">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowBig" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter></defs>
+  <g font-family="'JetBrains Mono','Fira Code',Consolas,'DejaVu Sans Mono','Courier New',monospace">
+  <g>
+    <rect x="15" y="15" width="370" height="200" rx="14" fill="#0b0620" stroke="#22d3ee" stroke-opacity="0.25"/>
+    <rect x="15" y="15" width="370" height="200" rx="14" fill="none" stroke="#22d3ee" stroke-width="2.5" stroke-dasharray="140 1000" filter="url(#glow)">
+      <animate attributeName="stroke-dashoffset" values="0;-1140" dur="5s" begin="0.0s" repeatCount="indefinite"/>
+    </rect>
+    <text x="41" y="79" font-size="48" font-weight="800" fill="none" stroke="#22d3ee" stroke-width="1.4" opacity="0.9">01</text>
+    <text x="119" y="73" font-size="23" font-weight="800" fill="#f8fafc" letter-spacing="1.5">PRODUTOS WEB</text>
+    <g font-size="17" fill="#cbd5e1">
+      <text x="41" y="123">Produtos web completos</text><text x="41" y="149">e escaláveis, do zero</text><text x="41" y="175">ao deploy.</text>
+    </g>
+    <g transform="translate(339 61)" fill="none" stroke="#22d3ee">
+      <circle r="18" stroke-dasharray="4 6" stroke-width="2"><animateTransform attributeName="transform" type="rotate" values="0;360" dur="6s" repeatCount="indefinite"/></circle>
+      <circle r="9" stroke-width="2" filter="url(#glow)"><animate attributeName="r" values="7;10;7" dur="2s" begin="0.0s" repeatCount="indefinite"/></circle>
+    </g>
+    <rect x="41" y="193" width="318" height="4" rx="2" fill="#22d3ee" opacity="0.15"/>
+    <rect x="41" y="193" width="0" height="4" rx="2" fill="#22d3ee" filter="url(#glow)">
+      <animate attributeName="width" values="0;318;318;0" keyTimes="0;0.45;0.8;1" dur="4s" begin="0.0s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g>
+    <rect x="410" y="15" width="370" height="200" rx="14" fill="#0b0620" stroke="#e879f9" stroke-opacity="0.25"/>
+    <rect x="410" y="15" width="370" height="200" rx="14" fill="none" stroke="#e879f9" stroke-width="2.5" stroke-dasharray="140 1000" filter="url(#glow)">
+      <animate attributeName="stroke-dashoffset" values="0;-1140" dur="5s" begin="0.6s" repeatCount="indefinite"/>
+    </rect>
+    <text x="436" y="79" font-size="48" font-weight="800" fill="none" stroke="#e879f9" stroke-width="1.4" opacity="0.9">02</text>
+    <text x="514" y="73" font-size="23" font-weight="800" fill="#f8fafc" letter-spacing="1.5">INTERFACES</text>
+    <g font-size="17" fill="#cbd5e1">
+      <text x="436" y="123">UI moderna, responsiva</text><text x="436" y="149">e orientada à experiência</text><text x="436" y="175">do usuário.</text>
+    </g>
+    <g transform="translate(734 61)" fill="none" stroke="#e879f9">
+      <circle r="18" stroke-dasharray="4 6" stroke-width="2"><animateTransform attributeName="transform" type="rotate" values="0;360" dur="7s" repeatCount="indefinite"/></circle>
+      <circle r="9" stroke-width="2" filter="url(#glow)"><animate attributeName="r" values="7;10;7" dur="2s" begin="0.3s" repeatCount="indefinite"/></circle>
+    </g>
+    <rect x="436" y="193" width="318" height="4" rx="2" fill="#e879f9" opacity="0.15"/>
+    <rect x="436" y="193" width="0" height="4" rx="2" fill="#e879f9" filter="url(#glow)">
+      <animate attributeName="width" values="0;318;318;0" keyTimes="0;0.45;0.8;1" dur="4s" begin="0.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g>
+    <rect x="805" y="15" width="370" height="200" rx="14" fill="#0b0620" stroke="#8b5cf6" stroke-opacity="0.25"/>
+    <rect x="805" y="15" width="370" height="200" rx="14" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-dasharray="140 1000" filter="url(#glow)">
+      <animate attributeName="stroke-dashoffset" values="0;-1140" dur="5s" begin="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="831" y="79" font-size="48" font-weight="800" fill="none" stroke="#8b5cf6" stroke-width="1.4" opacity="0.9">03</text>
+    <text x="909" y="73" font-size="23" font-weight="800" fill="#f8fafc" letter-spacing="1.5">FULL STACK</text>
+    <g font-size="17" fill="#cbd5e1">
+      <text x="831" y="123">Arquitetura com foco em</text><text x="831" y="149">qualidade e manutenção</text><text x="831" y="175">a longo prazo.</text>
+    </g>
+    <g transform="translate(1129 61)" fill="none" stroke="#8b5cf6">
+      <circle r="18" stroke-dasharray="4 6" stroke-width="2"><animateTransform attributeName="transform" type="rotate" values="0;360" dur="8s" repeatCount="indefinite"/></circle>
+      <circle r="9" stroke-width="2" filter="url(#glow)"><animate attributeName="r" values="7;10;7" dur="2s" begin="0.6s" repeatCount="indefinite"/></circle>
+    </g>
+    <rect x="831" y="193" width="318" height="4" rx="2" fill="#8b5cf6" opacity="0.15"/>
+    <rect x="831" y="193" width="0" height="4" rx="2" fill="#8b5cf6" filter="url(#glow)">
+      <animate attributeName="width" values="0;318;318;0" keyTimes="0;0.45;0.8;1" dur="4s" begin="1.0s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g>
+    <rect x="15" y="240" width="370" height="200" rx="14" fill="#0b0620" stroke="#fb923c" stroke-opacity="0.25"/>
+    <rect x="15" y="240" width="370" height="200" rx="14" fill="none" stroke="#fb923c" stroke-width="2.5" stroke-dasharray="140 1000" filter="url(#glow)">
+      <animate attributeName="stroke-dashoffset" values="0;-1140" dur="5s" begin="1.7999999999999998s" repeatCount="indefinite"/>
+    </rect>
+    <text x="41" y="304" font-size="48" font-weight="800" fill="none" stroke="#fb923c" stroke-width="1.4" opacity="0.9">04</text>
+    <text x="119" y="298" font-size="23" font-weight="800" fill="#f8fafc" letter-spacing="1.5">IA &amp; AGENTS</text>
+    <g font-size="17" fill="#cbd5e1">
+      <text x="41" y="348">Integração de IA, AI Agents</text><text x="41" y="374">e MCP dentro de produtos</text><text x="41" y="400">reais.</text>
+    </g>
+    <g transform="translate(339 286)" fill="none" stroke="#fb923c">
+      <circle r="18" stroke-dasharray="4 6" stroke-width="2"><animateTransform attributeName="transform" type="rotate" values="0;360" dur="9s" repeatCount="indefinite"/></circle>
+      <circle r="9" stroke-width="2" filter="url(#glow)"><animate attributeName="r" values="7;10;7" dur="2s" begin="0.8999999999999999s" repeatCount="indefinite"/></circle>
+    </g>
+    <rect x="41" y="418" width="318" height="4" rx="2" fill="#fb923c" opacity="0.15"/>
+    <rect x="41" y="418" width="0" height="4" rx="2" fill="#fb923c" filter="url(#glow)">
+      <animate attributeName="width" values="0;318;318;0" keyTimes="0;0.45;0.8;1" dur="4s" begin="1.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g>
+    <rect x="410" y="240" width="370" height="200" rx="14" fill="#0b0620" stroke="#4ade80" stroke-opacity="0.25"/>
+    <rect x="410" y="240" width="370" height="200" rx="14" fill="none" stroke="#4ade80" stroke-width="2.5" stroke-dasharray="140 1000" filter="url(#glow)">
+      <animate attributeName="stroke-dashoffset" values="0;-1140" dur="5s" begin="2.4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="436" y="304" font-size="48" font-weight="800" fill="none" stroke="#4ade80" stroke-width="1.4" opacity="0.9">05</text>
+    <text x="514" y="298" font-size="23" font-weight="800" fill="#f8fafc" letter-spacing="1.5">AUTOMAÇÃO</text>
+    <g font-size="17" fill="#cbd5e1">
+      <text x="436" y="348">Automação de fluxos de</text><text x="436" y="374">desenvolvimento e</text><text x="436" y="400">operações.</text>
+    </g>
+    <g transform="translate(734 286)" fill="none" stroke="#4ade80">
+      <circle r="18" stroke-dasharray="4 6" stroke-width="2"><animateTransform attributeName="transform" type="rotate" values="0;360" dur="10s" repeatCount="indefinite"/></circle>
+      <circle r="9" stroke-width="2" filter="url(#glow)"><animate attributeName="r" values="7;10;7" dur="2s" begin="1.2s" repeatCount="indefinite"/></circle>
+    </g>
+    <rect x="436" y="418" width="318" height="4" rx="2" fill="#4ade80" opacity="0.15"/>
+    <rect x="436" y="418" width="0" height="4" rx="2" fill="#4ade80" filter="url(#glow)">
+      <animate attributeName="width" values="0;318;318;0" keyTimes="0;0.45;0.8;1" dur="4s" begin="2.0s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g>
+    <rect x="805" y="240" width="370" height="200" rx="14" fill="#0b0620" stroke="#f472b6" stroke-opacity="0.25"/>
+    <rect x="805" y="240" width="370" height="200" rx="14" fill="none" stroke="#f472b6" stroke-width="2.5" stroke-dasharray="140 1000" filter="url(#glow)">
+      <animate attributeName="stroke-dashoffset" values="0;-1140" dur="5s" begin="3.0s" repeatCount="indefinite"/>
+    </rect>
+    <text x="831" y="304" font-size="48" font-weight="800" fill="none" stroke="#f472b6" stroke-width="1.4" opacity="0.9">06</text>
+    <text x="909" y="298" font-size="23" font-weight="800" fill="#f8fafc" letter-spacing="1.5">PERFORMANCE</text>
+    <g font-size="17" fill="#cbd5e1">
+      <text x="831" y="348">Code review, refatoração</text><text x="831" y="374">e otimização de</text><text x="831" y="400">performance.</text>
+    </g>
+    <g transform="translate(1129 286)" fill="none" stroke="#f472b6">
+      <circle r="18" stroke-dasharray="4 6" stroke-width="2"><animateTransform attributeName="transform" type="rotate" values="0;360" dur="11s" repeatCount="indefinite"/></circle>
+      <circle r="9" stroke-width="2" filter="url(#glow)"><animate attributeName="r" values="7;10;7" dur="2s" begin="1.5s" repeatCount="indefinite"/></circle>
+    </g>
+    <rect x="831" y="418" width="318" height="4" rx="2" fill="#f472b6" opacity="0.15"/>
+    <rect x="831" y="418" width="0" height="4" rx="2" fill="#f472b6" filter="url(#glow)">
+      <animate attributeName="width" values="0;318;318;0" keyTimes="0;0.45;0.8;1" dur="4s" begin="2.5s" repeatCount="indefinite"/>
+    </rect>
+  </g></g>
+</svg>
