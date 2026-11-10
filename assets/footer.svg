@@ -13,7 +13,7 @@
     </filter>
     <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#09090b"/><stop offset="0.45" stop-color="#09090b" stop-opacity="0"/><stop offset="1" stop-color="#09090b" stop-opacity="0.5"/></linearGradient>
     <linearGradient id="sides" x1="0" x2="1"><stop offset="0" stop-color="#09090b"/><stop offset="0.3" stop-color="#09090b" stop-opacity="0"/><stop offset="0.7" stop-color="#09090b" stop-opacity="0"/><stop offset="1" stop-color="#09090b"/></linearGradient>
-    <linearGradient id="hz" gradientUnits="userSpaceOnUse" x1="0" x2="1200" y1="0" y2="0"><stop offset="0" stop-color="#fafafa" stop-opacity="0"/><stop offset="0.5" stop-color="#fafafa" stop-opacity="0.45"/><stop offset="1" stop-color="#fafafa" stop-opacity="0"/></linearGradient>
+    <linearGradient id="hz" gradientUnits="userSpaceOnUse" x1="0" x2="1200" y1="0" y2="0"><stop offset="0" stop-color="#fafafa" stop-opacity="0"/><stop offset="0.5" stop-color="#a1a1aa" stop-opacity="0.3"/><stop offset="1" stop-color="#fafafa" stop-opacity="0"/></linearGradient>
     <clipPath id="c"><rect width="1200" height="190" rx="16"/></clipPath>
     <clipPath id="fc"><rect y="72" width="1200" height="118"/></clipPath>
   </defs>

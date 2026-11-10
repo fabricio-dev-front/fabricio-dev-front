@@ -14,11 +14,11 @@
   
   <g>
     <rect x="0.5" y="0.5" width="379" height="189" rx="14" fill="#121215" stroke="#27272a"/>
-    <rect x="0.5" y="0.5" width="379" height="189" rx="14" fill="none" stroke="#fafafa" stroke-width="1.2" stroke-dasharray="110 1030" opacity="0.7">
+    <rect x="0.5" y="0.5" width="379" height="189" rx="14" fill="none" stroke="#71717a" stroke-width="1.2" stroke-dasharray="110 1030" opacity="0.8">
       <animate attributeName="stroke-dashoffset" values="0;-1140" dur="7s" begin="0.0s" repeatCount="indefinite"/>
     </rect>
     <rect x="26" y="26" width="52" height="52" rx="12" fill="#18181b" stroke="#27272a"/>
-    <g transform="translate(52 52)" fill="none" stroke="#fafafa" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(52 52)" fill="none" stroke="#d4d4d8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
       <rect x="-16" y="-12" width="32" height="24" rx="3"/><path d="M-16 -5 H16"/><circle cx="-11" cy="-8.5" r="1"/><circle cx="-7" cy="-8.5" r="1"/>
       <animateTransform attributeName="transform" type="translate" additive="sum" values="0 0;0 -2;0 0" dur="3s" begin="0.0s" repeatCount="indefinite"/>
     </g>
@@ -28,11 +28,11 @@
   </g>
   <g>
     <rect x="400.5" y="0.5" width="379" height="189" rx="14" fill="#121215" stroke="#27272a"/>
-    <rect x="400.5" y="0.5" width="379" height="189" rx="14" fill="none" stroke="#fafafa" stroke-width="1.2" stroke-dasharray="110 1030" opacity="0.7">
+    <rect x="400.5" y="0.5" width="379" height="189" rx="14" fill="none" stroke="#71717a" stroke-width="1.2" stroke-dasharray="110 1030" opacity="0.8">
       <animate attributeName="stroke-dashoffset" values="0;-1140" dur="7s" begin="0.9s" repeatCount="indefinite"/>
     </rect>
     <rect x="426" y="26" width="52" height="52" rx="12" fill="#18181b" stroke="#27272a"/>
-    <g transform="translate(452 52)" fill="none" stroke="#fafafa" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(452 52)" fill="none" stroke="#d4d4d8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
       <rect x="-16" y="-14" width="13" height="28" rx="2"/><rect x="1" y="-14" width="15" height="12" rx="2"/><rect x="1" y="2" width="15" height="12" rx="2"/>
       <animateTransform attributeName="transform" type="translate" additive="sum" values="0 0;0 -2;0 0" dur="3s" begin="0.4s" repeatCount="indefinite"/>
     </g>
@@ -42,11 +42,11 @@
   </g>
   <g>
     <rect x="800.5" y="0.5" width="379" height="189" rx="14" fill="#121215" stroke="#27272a"/>
-    <rect x="800.5" y="0.5" width="379" height="189" rx="14" fill="none" stroke="#fafafa" stroke-width="1.2" stroke-dasharray="110 1030" opacity="0.7">
+    <rect x="800.5" y="0.5" width="379" height="189" rx="14" fill="none" stroke="#71717a" stroke-width="1.2" stroke-dasharray="110 1030" opacity="0.8">
       <animate attributeName="stroke-dashoffset" values="0;-1140" dur="7s" begin="1.8s" repeatCount="indefinite"/>
     </rect>
     <rect x="826" y="26" width="52" height="52" rx="12" fill="#18181b" stroke="#27272a"/>
-    <g transform="translate(852 52)" fill="none" stroke="#fafafa" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(852 52)" fill="none" stroke="#d4d4d8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
       <path d="M0 -15 L16 -7 L0 1 L-16 -7 Z"/><path d="M-16 0 L0 8 L16 0"/><path d="M-16 7 L0 15 L16 7"/>
       <animateTransform attributeName="transform" type="translate" additive="sum" values="0 0;0 -2;0 0" dur="3s" begin="0.8s" repeatCount="indefinite"/>
     </g>
@@ -56,11 +56,11 @@
   </g>
   <g>
     <rect x="0.5" y="210.5" width="379" height="189" rx="14" fill="#121215" stroke="#27272a"/>
-    <rect x="0.5" y="210.5" width="379" height="189" rx="14" fill="none" stroke="#fafafa" stroke-width="1.2" stroke-dasharray="110 1030" opacity="0.7">
+    <rect x="0.5" y="210.5" width="379" height="189" rx="14" fill="none" stroke="#71717a" stroke-width="1.2" stroke-dasharray="110 1030" opacity="0.8">
       <animate attributeName="stroke-dashoffset" values="0;-1140" dur="7s" begin="2.7s" repeatCount="indefinite"/>
     </rect>
     <rect x="26" y="236" width="52" height="52" rx="12" fill="#18181b" stroke="#27272a"/>
-    <g transform="translate(52 262)" fill="none" stroke="#fafafa" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(52 262)" fill="none" stroke="#d4d4d8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
       <circle r="5"/><circle cx="-13" cy="-10" r="2.5"/><circle cx="13" cy="-10" r="2.5"/><circle cx="-13" cy="10" r="2.5"/><circle cx="13" cy="10" r="2.5"/><path d="M-4 -3 L-11 -8 M4 -3 L11 -8 M-4 3 L-11 8 M4 3 L11 8"/>
       <animateTransform attributeName="transform" type="translate" additive="sum" values="0 0;0 -2;0 0" dur="3s" begin="1.2000000000000002s" repeatCount="indefinite"/>
     </g>
@@ -70,11 +70,11 @@
   </g>
   <g>
     <rect x="400.5" y="210.5" width="379" height="189" rx="14" fill="#121215" stroke="#27272a"/>
-    <rect x="400.5" y="210.5" width="379" height="189" rx="14" fill="none" stroke="#fafafa" stroke-width="1.2" stroke-dasharray="110 1030" opacity="0.7">
+    <rect x="400.5" y="210.5" width="379" height="189" rx="14" fill="none" stroke="#71717a" stroke-width="1.2" stroke-dasharray="110 1030" opacity="0.8">
       <animate attributeName="stroke-dashoffset" values="0;-1140" dur="7s" begin="3.6s" repeatCount="indefinite"/>
     </rect>
     <rect x="426" y="236" width="52" height="52" rx="12" fill="#18181b" stroke="#27272a"/>
-    <g transform="translate(452 262)" fill="none" stroke="#fafafa" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(452 262)" fill="none" stroke="#d4d4d8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
       <circle r="6"/><path d="M0 -15 V-10 M0 10 V15 M-15 0 H-10 M10 0 H15 M-10.6 -10.6 L-7 -7 M7 7 L10.6 10.6 M10.6 -10.6 L7 -7 M-7 7 L-10.6 10.6"/>
       <animateTransform attributeName="transform" type="translate" additive="sum" values="0 0;0 -2;0 0" dur="3s" begin="1.6s" repeatCount="indefinite"/>
     </g>
@@ -84,11 +84,11 @@
   </g>
   <g>
     <rect x="800.5" y="210.5" width="379" height="189" rx="14" fill="#121215" stroke="#27272a"/>
-    <rect x="800.5" y="210.5" width="379" height="189" rx="14" fill="none" stroke="#fafafa" stroke-width="1.2" stroke-dasharray="110 1030" opacity="0.7">
+    <rect x="800.5" y="210.5" width="379" height="189" rx="14" fill="none" stroke="#71717a" stroke-width="1.2" stroke-dasharray="110 1030" opacity="0.8">
       <animate attributeName="stroke-dashoffset" values="0;-1140" dur="7s" begin="4.5s" repeatCount="indefinite"/>
     </rect>
     <rect x="826" y="236" width="52" height="52" rx="12" fill="#18181b" stroke="#27272a"/>
-    <g transform="translate(852 262)" fill="none" stroke="#fafafa" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(852 262)" fill="none" stroke="#d4d4d8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
       <path d="M-15 10 A16 16 0 1 1 15 10"/><path d="M0 4 L8 -7"/><circle cy="4" r="2"/>
       <animateTransform attributeName="transform" type="translate" additive="sum" values="0 0;0 -2;0 0" dur="3s" begin="2.0s" repeatCount="indefinite"/>
     </g>

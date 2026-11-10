@@ -162,7 +162,7 @@ def hero():
     octa_d, _ = wire_frames(OCTA_V, OCTA_E, 40, cx, cy, frames,
                             lambda t: (0.3, -4 * math.pi * t, 0.35 * math.sin(2 * math.pi * t)))
     corners = "".join(
-        f'<circle r="2.6" fill="{FG}"><animate attributeName="cx" values="{";".join(f(p[vi][0]) for p in cube_pts)}" dur="{dur}s" repeatCount="indefinite"/>'
+        f'<circle r="2.2" fill="{MUTED}"><animate attributeName="cx" values="{";".join(f(p[vi][0]) for p in cube_pts)}" dur="{dur}s" repeatCount="indefinite"/>'
         f'<animate attributeName="cy" values="{";".join(f(p[vi][1]) for p in cube_pts)}" dur="{dur}s" repeatCount="indefinite"/></circle>'
         for vi in range(8)
     )
@@ -217,7 +217,7 @@ def hero():
         )
     kt, vals = discrete([tx + off + max(widths[k][i] for k in range(len(phrases))) for i in range(nfr + 1)])
     cursor = (
-        f'<rect y="{ty - 18}" width="10" height="22" fill="{FG}" x="{f(tx + off)}">'
+        f'<rect y="{ty - 18}" width="10" height="22" fill="{Z500}" x="{f(tx + off)}">'
         f'<animate attributeName="x" values="{vals}" keyTimes="{kt}" calcMode="discrete" dur="{total}s" repeatCount="indefinite"/>'
         f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/></rect>'
     )
@@ -242,7 +242,7 @@ def hero():
       <stop offset="0" stop-color="#ffffff" stop-opacity="0.07"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="{FG}"/><stop offset="0.45" stop-color="{FG}"/><stop offset="0.5" stop-color="#ffffff"/><stop offset="0.55" stop-color="{FG}"/><stop offset="1" stop-color="{MUTED}"/>
+      <stop offset="0" stop-color="{FG}"/><stop offset="0.45" stop-color="{FG}"/><stop offset="0.5" stop-color="{Z300}"/><stop offset="0.55" stop-color="{FG}"/><stop offset="1" stop-color="{Z500}"/>
     </linearGradient>
     <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
@@ -254,7 +254,7 @@ def hero():
       <stop offset="0" stop-color="{BG}"/><stop offset="0.25" stop-color="{BG}" stop-opacity="0"/><stop offset="0.75" stop-color="{BG}" stop-opacity="0"/><stop offset="1" stop-color="{BG}"/>
     </linearGradient>
     <linearGradient id="horizon" gradientUnits="userSpaceOnUse" x1="0" x2="{W}" y1="0" y2="0">
-      <stop offset="0" stop-color="{FG}" stop-opacity="0"/><stop offset="0.75" stop-color="{FG}" stop-opacity="0.5"/><stop offset="1" stop-color="{FG}" stop-opacity="0"/>
+      <stop offset="0" stop-color="{FG}" stop-opacity="0"/><stop offset="0.75" stop-color="{MUTED}" stop-opacity="0.35"/><stop offset="1" stop-color="{FG}" stop-opacity="0"/>
     </linearGradient>
     <clipPath id="frame"><rect width="{W}" height="{H}" rx="16"/></clipPath>
     <clipPath id="floorClip"><rect y="{HZ}" width="{W}" height="{H - HZ}"/></clipPath>
@@ -277,19 +277,19 @@ def hero():
     <g opacity="0.55">{sphere_wire(cx, cy, 128, 30, Z700, 0.9)}</g>
 
     <!-- objeto 3D -->
-    <ellipse cx="{cx}" cy="{HZ + 14}" rx="80" ry="7" fill="{FG}" opacity="0.12" filter="url(#glowBig)">
+    <ellipse cx="{cx}" cy="{HZ + 14}" rx="80" ry="7" fill="{Z500}" opacity="0.15" filter="url(#glowBig)">
       <animate attributeName="rx" values="80;62;80" dur="5s" repeatCount="indefinite"/>
     </ellipse>
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0;0 -9;0 0" dur="5s" repeatCount="indefinite"/>
-      <circle cx="{cx}" cy="{cy}" r="70" fill="{FG}" opacity="0.06" filter="url(#glowBig)"/>
+      <circle cx="{cx}" cy="{cy}" r="70" fill="{Z500}" opacity="0.08" filter="url(#glowBig)"/>
       <ellipse cx="{cx}" cy="{cy}" rx="168" ry="30" fill="none" stroke="{Z600}" stroke-width="1" stroke-dasharray="2 8" transform="rotate(-10 {cx} {cy})">
         <animate attributeName="stroke-dashoffset" values="0;-100" dur="4s" repeatCount="indefinite"/>
       </ellipse>
-      <path d="{octa_d[0]}" fill="none" stroke="{Z500}" stroke-width="1.2">
+      <path d="{octa_d[0]}" fill="none" stroke="{Z600}" stroke-width="1.1">
         <animate attributeName="d" values="{';'.join(octa_d)}" dur="{dur}s" repeatCount="indefinite"/>
       </path>
-      <path d="{cube_d[0]}" fill="none" stroke="{FG}" stroke-width="1.6" stroke-linecap="round" filter="url(#glow)">
+      <path d="{cube_d[0]}" fill="none" stroke="{Z300}" stroke-width="1.4" stroke-linecap="round" stroke-opacity="0.75" filter="url(#glow)">
         <animate attributeName="d" values="{';'.join(cube_d)}" dur="{dur}s" repeatCount="indefinite"/>
       </path>
       {corners}
@@ -305,7 +305,7 @@ def hero():
       <text x="70" y="160" font-weight="700" font-size="62" letter-spacing="-1.5" textLength="540" lengthAdjust="spacingAndGlyphs" fill="{Z600}" opacity="0.6">{name}{glitch}</text>
       <text x="70" y="160" font-weight="700" font-size="62" letter-spacing="-1.5" textLength="540" lengthAdjust="spacingAndGlyphs" fill="url(#nameGrad)">{name}</text>
       <g clip-path="url(#nameClip)">
-        <rect y="90" width="120" height="90" fill="url(#shine)" opacity="0.55" transform="skewX(-20)">
+        <rect y="90" width="120" height="90" fill="url(#shine)" opacity="0.18" transform="skewX(-20)">
           <animate attributeName="x" values="-200;900;900" keyTimes="0;0.4;1" dur="5s" repeatCount="indefinite"/>
         </rect>
       </g>
@@ -342,7 +342,7 @@ def header(file, idx, title):
     <animate attributeName="opacity" values="1;0.55;1;1" keyTimes="0;0.02;0.04;1" dur="5s" repeatCount="indefinite"/>
   </text>
   <line x1="{f(x0 + tw + 20)}" x2="{W - 24}" y1="33" y2="33" stroke="url(#ln)"/>
-  <circle cy="33" r="2.5" fill="{FG}" filter="url(#glow)">
+  <circle cy="33" r="2.5" fill="{Z500}" filter="url(#glow)">
     <animate attributeName="cx" values="{f(x0 + tw + 20)};{W - 24}" dur="3.5s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="1;0" dur="3.5s" repeatCount="indefinite"/>
   </circle>
@@ -381,11 +381,11 @@ def cards():
         out.append(f"""
   <g>
     <rect x="{x + 0.5}" y="{y + 0.5}" width="{cwid - 1}" height="{chei - 1}" rx="14" fill="{CARD}" stroke="{BORDER}"/>
-    <rect x="{x + 0.5}" y="{y + 0.5}" width="{cwid - 1}" height="{chei - 1}" rx="14" fill="none" stroke="{FG}" stroke-width="1.2" stroke-dasharray="110 {per - 110}" opacity="0.7">
+    <rect x="{x + 0.5}" y="{y + 0.5}" width="{cwid - 1}" height="{chei - 1}" rx="14" fill="none" stroke="{Z500}" stroke-width="1.2" stroke-dasharray="110 {per - 110}" opacity="0.8">
       <animate attributeName="stroke-dashoffset" values="0;-{per}" dur="7s" begin="{i * 0.9}s" repeatCount="indefinite"/>
     </rect>
     <rect x="{x + 26}" y="{y + 26}" width="52" height="52" rx="12" fill="{TAG}" stroke="{BORDER}"/>
-    <g transform="translate({x + 52} {y + 52})" fill="none" stroke="{FG}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate({x + 52} {y + 52})" fill="none" stroke="{Z300}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
       {ICONS[icon]}
       <animateTransform attributeName="transform" type="translate" additive="sum" values="0 0;0 -2;0 0" dur="3s" begin="{i * 0.4}s" repeatCount="indefinite"/>
     </g>
@@ -440,7 +440,7 @@ def orbit():
             w = len(txt) * 9.4 + 30
             body = (
                 f'<rect x="{f(-w / 2)}" y="-16" width="{f(w)}" height="32" rx="8" fill="{CARD}" stroke="{Z700}"/>'
-                f'<text y="5.5" text-anchor="middle" font-family="{SANS}" font-size="15" font-weight="500" fill="{FG}">{esc(txt)}</text>'
+                f'<text y="5.5" text-anchor="middle" font-family="{SANS}" font-size="15" font-weight="500" fill="{Z300}">{esc(txt)}</text>'
             )
             anim = (
                 f'<animateTransform attributeName="transform" type="translate" values="{";".join(tr)}" dur="{dur}s" repeatCount="indefinite"/>'
@@ -466,7 +466,7 @@ def orbit():
     <g>{stars(W, H, 60)}</g>
     {''.join(back_r)}
     {''.join(back_l)}
-    <circle cx="{cx}" cy="{cy}" r="{R + 20}" fill="{FG}" opacity="0.07" filter="url(#glowBig)">
+    <circle cx="{cx}" cy="{cy}" r="{R + 20}" fill="{Z500}" opacity="0.08" filter="url(#glowBig)">
       <animate attributeName="opacity" values="0.04;0.1;0.04" dur="4s" repeatCount="indefinite"/>
     </circle>
     <circle cx="{cx}" cy="{cy}" r="{R}" fill="url(#core)" stroke="{Z700}"/>
@@ -491,20 +491,22 @@ def cta():
   <defs>{filters()}
     <linearGradient id="l" gradientUnits="userSpaceOnUse" x1="120" x2="{f(bx - 24)}" y1="0" y2="0"><stop offset="0" stop-color="{Z700}" stop-opacity="0"/><stop offset="1" stop-color="{Z700}"/></linearGradient>
     <linearGradient id="r" gradientUnits="userSpaceOnUse" x1="{W - 120}" x2="{f(bx + bw + 24)}" y1="0" y2="0"><stop offset="0" stop-color="{Z700}" stop-opacity="0"/><stop offset="1" stop-color="{Z700}"/></linearGradient>
+    <linearGradient id="btn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c1c20"/><stop offset="1" stop-color="{CARD}"/></linearGradient>
   </defs>
   <rect width="{W}" height="{H}" rx="16" fill="{BG}"/>
   <rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="16" fill="none" stroke="{BORDER}"/>
   <line x1="120" x2="{f(bx - 24)}" y1="{H / 2}" y2="{H / 2}" stroke="url(#l)"/>
   <line x1="{f(bx + bw + 24)}" x2="{W - 120}" y1="{H / 2}" y2="{H / 2}" stroke="url(#r)"/>
-  <rect x="{f(bx)}" y="{f(by)}" width="{bw}" height="{bh}" rx="12" fill="{FG}" opacity="0.15" filter="url(#glowBig)">
-    <animate attributeName="opacity" values="0.06;0.22;0.06" dur="3s" repeatCount="indefinite"/>
+  <rect x="{f(bx)}" y="{f(by)}" width="{bw}" height="{bh}" rx="12" fill="{Z500}" filter="url(#glowBig)">
+    <animate attributeName="opacity" values="0.05;0.18;0.05" dur="3s" repeatCount="indefinite"/>
   </rect>
-  <rect x="{f(bx)}" y="{f(by)}" width="{bw}" height="{bh}" rx="12" fill="{FG}"/>
-  <rect x="{f(bx - 5)}" y="{f(by - 5)}" width="{bw + 10}" height="{bh + 10}" rx="16" fill="none" stroke="{FG}" stroke-width="1" stroke-dasharray="70 {per + 40}" opacity="0.8">
-    <animate attributeName="stroke-dashoffset" values="0;-{per + 110}" dur="4s" repeatCount="indefinite"/>
+  <rect x="{f(bx + 0.5)}" y="{f(by + 0.5)}" width="{bw - 1}" height="{bh - 1}" rx="12" fill="url(#btn)" stroke="{Z700}"/>
+  <rect x="{f(bx + 0.5)}" y="{f(by + 0.5)}" width="{bw - 1}" height="{bh - 1}" rx="12" fill="none" stroke="{MUTED}" stroke-width="1.2" stroke-dasharray="80 {per}" opacity="0.7">
+    <animate attributeName="stroke-dashoffset" values="0;-{per + 80}" dur="4s" repeatCount="indefinite"/>
   </rect>
-  <text x="{W / 2 - 12}" y="{H / 2 + 6.5}" text-anchor="middle" font-family="{SANS}" font-size="19" font-weight="600" fill="{BG}">Entrar em contato</text>
-  <g transform="translate({f(W / 2 + 92)} {H / 2})" fill="none" stroke="{BG}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="{f(bx + 34)}" cy="{H / 2}" r="4" fill="{GREEN}"><animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/></circle>
+  <text x="{W / 2 + 2}" y="{H / 2 + 6.5}" text-anchor="middle" font-family="{SANS}" font-size="19" font-weight="600" fill="{Z300}">Entrar em contato</text>
+  <g transform="translate({f(W / 2 + 106)} {H / 2})" fill="none" stroke="{MUTED}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M-6 0 H6 M1 -5 L6 0 L1 5"/>
     <animateTransform attributeName="transform" type="translate" additive="sum" values="0 0;4 0;0 0" dur="1.4s" repeatCount="indefinite"/>
   </g>
@@ -519,7 +521,7 @@ def footer():
   <defs>{filters()}
     <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{BG}"/><stop offset="0.45" stop-color="{BG}" stop-opacity="0"/><stop offset="1" stop-color="{BG}" stop-opacity="0.5"/></linearGradient>
     <linearGradient id="sides" x1="0" x2="1"><stop offset="0" stop-color="{BG}"/><stop offset="0.3" stop-color="{BG}" stop-opacity="0"/><stop offset="0.7" stop-color="{BG}" stop-opacity="0"/><stop offset="1" stop-color="{BG}"/></linearGradient>
-    <linearGradient id="hz" gradientUnits="userSpaceOnUse" x1="0" x2="{W}" y1="0" y2="0"><stop offset="0" stop-color="{FG}" stop-opacity="0"/><stop offset="0.5" stop-color="{FG}" stop-opacity="0.45"/><stop offset="1" stop-color="{FG}" stop-opacity="0"/></linearGradient>
+    <linearGradient id="hz" gradientUnits="userSpaceOnUse" x1="0" x2="{W}" y1="0" y2="0"><stop offset="0" stop-color="{FG}" stop-opacity="0"/><stop offset="0.5" stop-color="{MUTED}" stop-opacity="0.3"/><stop offset="1" stop-color="{FG}" stop-opacity="0"/></linearGradient>
     <clipPath id="c"><rect width="{W}" height="{H}" rx="16"/></clipPath>
     <clipPath id="fc"><rect y="{HZ}" width="{W}" height="{H - HZ}"/></clipPath>
   </defs>
