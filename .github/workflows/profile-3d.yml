@@ -1,0 +1,36 @@
+name: Profile 3D + Snake
+
+on:
+  schedule:
+    - cron: "17 6 * * *" # todo dia, 03:17 em Fortaleza
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      # Calendário de contribuições em 3D -> profile-3d-contrib/*.svg
+      - uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: profile-3d-settings.json
+
+      # Cobrinha comendo as contribuições -> dist/*.svg
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-dark.svg?color_snake=#a1a1aa&color_dots=#18181b,#27272a,#3f3f46,#52525b,#71717a
+
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A profile-3d-contrib dist
+          git commit -m "chore: atualiza gráficos do perfil" && git push || echo "nada para atualizar"
