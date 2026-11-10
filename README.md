@@ -6,10 +6,10 @@
 
 <br />
 
-<a href="https://fabricio-front.vercel.app"><img src="https://img.shields.io/badge/PORTFÓLIO-0b0620?style=for-the-badge&logo=vercel&logoColor=22d3ee" alt="Portfólio" /></a>
-<a href="https://www.linkedin.com/in/fabricio-dev-front/"><img src="https://img.shields.io/badge/LINKEDIN-0b0620?style=for-the-badge&logo=linkedin&logoColor=e879f9" alt="LinkedIn" /></a>
-<a href="https://wa.me/5584981531756"><img src="https://img.shields.io/badge/WHATSAPP-0b0620?style=for-the-badge&logo=whatsapp&logoColor=4ade80" alt="WhatsApp" /></a>
-<img src="https://komarev.com/ghpvc/?username=fabricio-dev-front&style=for-the-badge&color=8b5cf6&label=VISITANTES" alt="Visitantes" />
+<a href="https://fabricio-front.vercel.app"><img src="https://img.shields.io/badge/PORTFÓLIO-09090b?style=for-the-badge&logo=vercel&logoColor=fafafa" alt="Portfólio" /></a>
+<a href="https://www.linkedin.com/in/fabricio-dev-front/"><img src="https://img.shields.io/badge/LINKEDIN-09090b?style=for-the-badge&logo=linkedin&logoColor=fafafa" alt="LinkedIn" /></a>
+<a href="https://wa.me/5584981531756"><img src="https://img.shields.io/badge/WHATSAPP-09090b?style=for-the-badge&logo=whatsapp&logoColor=fafafa" alt="WhatsApp" /></a>
+<img src="https://komarev.com/ghpvc/?username=fabricio-dev-front&style=for-the-badge&color=27272a&label=VISITANTES" alt="Visitantes" />
 
 </div>
 
@@ -21,7 +21,7 @@ Sou **Software Engineer** com mais de **3,5 anos de experiência** construindo a
 
 Atualmente atuo como **IA Engineer — Full Stack**, combinando engenharia de software com Inteligência Artificial ao longo de todo o ciclo de desenvolvimento: do planejamento e análise de requisitos à implementação, testes, refatoração e otimização.
 
-> **`>_`** Transformo problemas complexos em experiências digitais simples, escaláveis e prontas para produção.
+> Transformo problemas complexos em experiências digitais simples, escaláveis e prontas para produção.
 
 <br />
 
@@ -41,9 +41,9 @@ Atualmente atuo como **IA Engineer — Full Stack**, combinando engenharia de so
 
 <div align="center">
 
-<img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="Calendário de contribuições em 3D" />
+<img src="./profile-3d-contrib/profile-dark.svg" width="100%" alt="Calendário de contribuições em 3D" />
 
-<img src="./dist/snake-neon.svg" width="100%" alt="Cobrinha comendo o gráfico de contribuições" />
+<img src="./dist/snake-dark.svg" width="100%" alt="Cobrinha comendo o gráfico de contribuições" />
 
 </div>
 
