@@ -417,9 +417,11 @@ def orbit():
     cx, cy = 600, 220
     orbits = [
         dict(r=260, tilt=0.36, zrot=-0.14, period=22, dirn=1,
-             labels=["React", "Next.js", "TypeScript", "Tailwind", "Node.js"]),
+             labels=[("React", "#61dafb"), ("Next.js", "#d4d4d8"), ("TypeScript", "#3178c6"),
+                     ("Tailwind", "#38bdf8"), ("Node.js", "#5fa04e")]),
         dict(r=440, tilt=0.30, zrot=0.10, period=32, dirn=-1,
-             labels=["AI Agents", "MCP", "SQL", "Git", "Vercel", "Claude Code"]),
+             labels=[("AI Agents", "#a78bfa"), ("MCP", "#2dd4bf"), ("SQL", "#4f86e8"),
+                     ("Git", "#f05032"), ("Vercel", "#d4d4d8"), ("Claude Code", "#d97757")]),
     ]
     frames = 96
 
@@ -438,7 +440,7 @@ def orbit():
         back_r.append(f'<path d="{"".join(sb)}" fill="none" stroke="{BORDER}" stroke-width="1"/>')
         front_r.append(f'<path d="{"".join(sf)}" fill="none" stroke="{Z600}" stroke-width="1.2"/>')
         n, dur = len(o["labels"]), o["period"]
-        for li, txt in enumerate(o["labels"]):
+        for li, (txt, col) in enumerate(o["labels"]):
             a0 = 2 * math.pi * li / n
             tr, sc, ob, of = [], [], [], []
             for fi in range(frames + 1):
@@ -448,10 +450,13 @@ def orbit():
                 d = max(0.35, min(1, 0.95 - z / 900))
                 ob.append(f"{d * 0.5:.2f}" if z > 0 else "0")
                 of.append(f"{d:.2f}" if z <= 0 else "0")
-            w = len(txt) * 9.4 + 30
+            w = len(txt) * 9.4 + 46
             body = (
-                f'<rect x="{f(-w / 2)}" y="-16" width="{f(w)}" height="32" rx="8" fill="{CARD}" stroke="{Z700}"/>'
-                f'<text y="5.5" text-anchor="middle" font-family="{SANS}" font-size="15" font-weight="500" fill="{Z300}">{esc(txt)}</text>'
+                f'<rect x="{f(-w / 2)}" y="-16" width="{f(w)}" height="32" rx="8" fill="{CARD}"/>'
+                f'<rect x="{f(-w / 2)}" y="-16" width="{f(w)}" height="32" rx="8" fill="{col}" fill-opacity="0.08" stroke="{col}" stroke-opacity="0.55"/>'
+                f'<circle cx="{f(-w / 2 + 16)}" cy="0" r="7" fill="{col}" opacity="0.35" filter="url(#glow)"/>'
+                f'<circle cx="{f(-w / 2 + 16)}" cy="0" r="4" fill="{col}"/>'
+                f'<text x="8" y="5.5" text-anchor="middle" font-family="{SANS}" font-size="15" font-weight="500" fill="#e4e4e7">{esc(txt)}</text>'
             )
             anim = (
                 f'<animateTransform attributeName="transform" type="translate" values="{";".join(tr)}" dur="{dur}s" repeatCount="indefinite"/>'
