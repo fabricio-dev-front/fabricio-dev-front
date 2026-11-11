@@ -28,6 +28,21 @@ jobs:
           outputs: |
             dist/snake-green.svg?color_snake=#e4e4e7&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
 
+      - name: Remove a barra de progresso da cobrinha
+        run: |
+          python3 - <<'PY'
+          import re
+          p = "dist/snake-green.svg"
+          s = open(p, encoding="utf-8").read()
+          s = re.sub(r'<rect class="u [^"]*"[^>]*/>', "", s)
+          m = re.search(r'viewBox="(-?[\d.]+) (-?[\d.]+) ([\d.]+) ([\d.]+)" width="([\d.]+)" height="([\d.]+)"', s)
+          if m:
+              x, y, w, h = map(float, m.groups()[:4])
+              nh = h - 36
+              s = s.replace(m.group(0), f'viewBox="{x:g} {y:g} {w:g} {nh:g}" width="{w:g}" height="{nh:g}"', 1)
+          open(p, "w", encoding="utf-8").write(s)
+          PY
+
       - name: Commit & Push
         run: |
           git config user.name github-actions
