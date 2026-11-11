@@ -43,26 +43,8 @@ Atualmente atuo como **IA Engineer — Full Stack**, combinando engenharia de so
 
 <img src="./dist/languages.svg" width="100%" alt="Todas as linguagens usadas nos meus repositórios" />
 
-<img src="./profile-3d-contrib/profile-green.svg" width="100%" alt="Calendário de contribuições em 3D" />
-
 <img src="./dist/snake-green.svg" width="100%" alt="Cobrinha comendo o gráfico de contribuições" />
 
 </div>
 
-<br />
-
-<img src="./assets/h-contato.svg" width="100%" alt="Vamos construir algo juntos?" />
-
-<div align="center">
-
-Disponível para novos projetos, consultoria técnica, desenvolvimento de software e soluções com Inteligência Artificial.
-
-<a href="https://fabricio-front.vercel.app/#contato">
-  <img src="./assets/cta.svg" width="70%" alt="Entrar em contato" />
-</a>
-
-</div>
-
-<img src="./assets/footer.svg" width="100%" alt="Construindo software com intenção, qualidade e impacto." />
-
-<!-- Os gráficos 3D e a cobrinha são gerados pelo workflow .github/workflows/profile-3d.yml -->
+<!-- A cobrinha e o gráfico de linguagens são gerados pelo workflow .github/workflows/profile-3d.yml -->

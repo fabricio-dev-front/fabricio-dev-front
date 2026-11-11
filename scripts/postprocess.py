@@ -65,5 +65,4 @@ def snake(path):
 
 
 if __name__ == "__main__":
-    calendar(sys.argv[1] if len(sys.argv) > 1 else "profile-3d-contrib/profile-green.svg")
-    snake(sys.argv[2] if len(sys.argv) > 2 else "dist/snake-green.svg")
+    snake(sys.argv[1] if len(sys.argv) > 1 else "dist/snake-green.svg")

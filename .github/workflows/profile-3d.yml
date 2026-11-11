@@ -1,4 +1,4 @@
-name: Profile 3D + Snake
+name: Perfil — cobrinha e linguagens
 
 on:
   schedule:
@@ -13,13 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-
-      # Calendário de contribuições em 3D -> profile-3d-contrib/*.svg
-      - uses: yoshi389111/github-profile-3d-contrib@latest
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-          SETTING_JSON: profile-3d-settings.json
 
       # Cobrinha comendo as contribuições -> dist/*.svg
       - uses: Platane/snk/svg-only@v3
@@ -36,13 +29,13 @@ jobs:
           EXTRA_REPOS: classroom-ufersa/Gerenciamento-de-Fazenda,classroom-ufersa/GnomeSortClientes
         run: python3 scripts/gen-languages.py dist/languages.svg
 
-      # Remove o donut do calendário 3D e a barra da cobrinha; adiciona entrada suave
+      # Remove a barra de progresso da cobrinha
       - name: Ajustes nos SVGs
-        run: python3 scripts/postprocess.py profile-3d-contrib/profile-green.svg dist/snake-green.svg
+        run: python3 scripts/postprocess.py dist/snake-green.svg
 
       - name: Commit & Push
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add -A profile-3d-contrib dist
+          git add -A dist
           git commit -m "chore: atualiza gráficos do perfil" && git push || echo "nada para atualizar"

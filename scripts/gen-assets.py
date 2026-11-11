@@ -556,13 +556,10 @@ def footer():
 hero()
 cards()
 orbit()
-cta()
-footer()
 for file, idx, title in [
     ("h-sobre.svg", "01", "Sobre mim"),
     ("h-servicos.svg", "02", "O que eu faço"),
     ("h-stack.svg", "03", "Stack principal"),
     ("h-atividade.svg", "04", "Atividade"),
-    ("h-contato.svg", "05", "Vamos construir juntos?"),
 ]:
     header(file, idx, title)
