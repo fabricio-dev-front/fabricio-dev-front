@@ -41,6 +41,8 @@ Atualmente atuo como **IA Engineer — Full Stack**, combinando engenharia de so
 
 <div align="center">
 
+<img src="./dist/languages.svg" width="100%" alt="Todas as linguagens usadas nos meus repositórios" />
+
 <img src="./profile-3d-contrib/profile-green.svg" width="100%" alt="Calendário de contribuições em 3D" />
 
 <img src="./dist/snake-green.svg" width="100%" alt="Cobrinha comendo o gráfico de contribuições" />

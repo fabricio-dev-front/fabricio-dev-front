@@ -28,6 +28,14 @@ jobs:
           outputs: |
             dist/snake-green.svg?color_snake=#e4e4e7&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
 
+      # Todas as linguagens de todos os repositórios -> dist/languages.svg
+      - name: Gráfico de linguagens
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          EXTRA_REPOS: classroom-ufersa/Gerenciamento-de-Fazenda,classroom-ufersa/GnomeSortClientes
+        run: python3 scripts/gen-languages.py dist/languages.svg
+
       - name: Remove a barra de progresso da cobrinha
         run: |
           python3 - <<'PY'
