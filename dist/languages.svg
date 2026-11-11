@@ -8,7 +8,7 @@
     <text x="32" y="44" font-family="'Geist Mono','JetBrains Mono',ui-monospace,Consolas,monospace" font-size="13" letter-spacing="2" fill="#71717a">LINGUAGENS · TODOS OS REPOSITÓRIOS</text>
     <circle cx="230" cy="208" r="120" fill="none" stroke="#3178c6" stroke-width="34" opacity="0.12" filter="url(#glowBig)"/>
     <circle cx="230" cy="208" r="120" fill="none" stroke="#18181b" stroke-width="34"/>
-    <circle cx="230" cy="208" r="120" fill="none" stroke="#3178c6" stroke-width="34" stroke-dasharray="0 753.98" stroke-dashoffset="-0" transform="rotate(-90 230 208)"><animate attributeName="stroke-dasharray" values="0 753.98;371.96 753.98" dur="0.9s" begin="0.15s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></circle><circle cx="230" cy="208" r="120" fill="none" stroke="#3572A5" stroke-width="34" stroke-dasharray="0 753.98" stroke-dashoffset="-374.46" transform="rotate(-90 230 208)"><animate attributeName="stroke-dasharray" values="0 753.98;115.7 753.98" dur="0.9s" begin="0.23s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></circle><circle cx="230" cy="208" r="120" fill="none" stroke="#555555" stroke-width="34" stroke-dasharray="0 753.98" stroke-dashoffset="-492.67" transform="rotate(-90 230 208)"><animate attributeName="stroke-dasharray" values="0 753.98;90.89 753.98" dur="0.9s" begin="0.31s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></circle><circle cx="230" cy="208" r="120" fill="none" stroke="#663399" stroke-width="34" stroke-dasharray="0 753.98" stroke-dashoffset="-586.06" transform="rotate(-90 230 208)"><animate attributeName="stroke-dasharray" values="0 753.98;67.71 753.98" dur="0.9s" begin="0.39s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></circle><circle cx="230" cy="208" r="120" fill="none" stroke="#e34c26" stroke-width="34" stroke-dasharray="0 753.98" stroke-dashoffset="-656.27" transform="rotate(-90 230 208)"><animate attributeName="stroke-dasharray" values="0 753.98;45.28 753.98" dur="0.9s" begin="0.47s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></circle><circle cx="230" cy="208" r="120" fill="none" stroke="#f1e05a" stroke-width="34" stroke-dasharray="0 753.98" stroke-dashoffset="-704.05" transform="rotate(-90 230 208)"><animate attributeName="stroke-dasharray" values="0 753.98;37.77 753.98" dur="0.9s" begin="0.55s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></circle><circle cx="230" cy="208" r="120" fill="none" stroke="#c6538c" stroke-width="34" stroke-dasharray="0 753.98" stroke-dashoffset="-744.32" transform="rotate(-90 230 208)"><animate attributeName="stroke-dasharray" values="0 753.98;7.16 753.98" dur="0.9s" begin="0.63s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></circle>
+    <circle cx="230" cy="208" r="120" fill="none" stroke="#3178c6" stroke-width="34" stroke-dasharray="0 753.98" stroke-dashoffset="-0" transform="rotate(-90 230 208)"><animate attributeName="stroke-dasharray" values="0 753.98;361.37 753.98" dur="0.9s" begin="0.15s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></circle><circle cx="230" cy="208" r="120" fill="none" stroke="#3572A5" stroke-width="34" stroke-dasharray="0 753.98" stroke-dashoffset="-363.87" transform="rotate(-90 230 208)"><animate attributeName="stroke-dasharray" values="0 753.98;133.7 753.98" dur="0.9s" begin="0.23s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></circle><circle cx="230" cy="208" r="120" fill="none" stroke="#555555" stroke-width="34" stroke-dasharray="0 753.98" stroke-dashoffset="-500.06" transform="rotate(-90 230 208)"><animate attributeName="stroke-dasharray" values="0 753.98;88.25 753.98" dur="0.9s" begin="0.31s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></circle><circle cx="230" cy="208" r="120" fill="none" stroke="#663399" stroke-width="34" stroke-dasharray="0 753.98" stroke-dashoffset="-590.81" transform="rotate(-90 230 208)"><animate attributeName="stroke-dasharray" values="0 753.98;65.72 753.98" dur="0.9s" begin="0.39s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></circle><circle cx="230" cy="208" r="120" fill="none" stroke="#e34c26" stroke-width="34" stroke-dasharray="0 753.98" stroke-dashoffset="-659.04" transform="rotate(-90 230 208)"><animate attributeName="stroke-dasharray" values="0 753.98;43.93 753.98" dur="0.9s" begin="0.47s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></circle><circle cx="230" cy="208" r="120" fill="none" stroke="#f1e05a" stroke-width="34" stroke-dasharray="0 753.98" stroke-dashoffset="-705.47" transform="rotate(-90 230 208)"><animate attributeName="stroke-dasharray" values="0 753.98;36.63 753.98" dur="0.9s" begin="0.55s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></circle><circle cx="230" cy="208" r="120" fill="none" stroke="#c6538c" stroke-width="34" stroke-dasharray="0 753.98" stroke-dashoffset="-744.6" transform="rotate(-90 230 208)"><animate attributeName="stroke-dasharray" values="0 753.98;6.88 753.98" dur="0.9s" begin="0.63s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></circle>
     <g>
       <animateTransform attributeName="transform" type="rotate" values="0 230 208;360 230 208" dur="40s" repeatCount="indefinite"/>
       <circle cx="230" cy="208" r="149.0" fill="none" stroke="#27272a" stroke-dasharray="2 9"/>
@@ -25,7 +25,7 @@
       <rect x="600" y="89" width="0" height="6" rx="3" fill="#3178c6">
         <animate attributeName="width" values="0;420" dur="0.9s" begin="0.4s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
       </rect>
-      <text x="1032" y="98" font-family="'Geist Mono','JetBrains Mono',ui-monospace,Consolas,monospace" font-size="13" fill="#a1a1aa">49.7%</text>
+      <text x="1032" y="98" font-family="'Geist Mono','JetBrains Mono',ui-monospace,Consolas,monospace" font-size="13" fill="#a1a1aa">48.3%</text>
     </g>
     <g opacity="0">
       <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.36s" fill="freeze"/>
@@ -33,9 +33,9 @@
       <text x="472" y="136" font-family="'Geist','Inter','Segoe UI',system-ui,-apple-system,sans-serif" font-size="16" fill="#e4e4e7">Python</text>
       <rect x="600" y="127" width="420" height="6" rx="3" fill="#18181b"/>
       <rect x="600" y="127" width="0" height="6" rx="3" fill="#3572A5">
-        <animate attributeName="width" values="0;132.58" dur="0.9s" begin="0.46s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
+        <animate attributeName="width" values="0;157.21" dur="0.9s" begin="0.46s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
       </rect>
-      <text x="1032" y="136" font-family="'Geist Mono','JetBrains Mono',ui-monospace,Consolas,monospace" font-size="13" fill="#a1a1aa">15.7%</text>
+      <text x="1032" y="136" font-family="'Geist Mono','JetBrains Mono',ui-monospace,Consolas,monospace" font-size="13" fill="#a1a1aa">18.1%</text>
     </g>
     <g opacity="0">
       <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.42s" fill="freeze"/>
@@ -45,7 +45,7 @@
       <rect x="600" y="165" width="0" height="6" rx="3" fill="#555555">
         <animate attributeName="width" values="0;104.75" dur="0.9s" begin="0.52s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
       </rect>
-      <text x="1032" y="174" font-family="'Geist Mono','JetBrains Mono',ui-monospace,Consolas,monospace" font-size="13" fill="#a1a1aa">12.4%</text>
+      <text x="1032" y="174" font-family="'Geist Mono','JetBrains Mono',ui-monospace,Consolas,monospace" font-size="13" fill="#a1a1aa">12.0%</text>
     </g>
     <g opacity="0">
       <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.48s" fill="freeze"/>
@@ -55,7 +55,7 @@
       <rect x="600" y="203" width="0" height="6" rx="3" fill="#663399">
         <animate attributeName="width" values="0;78.75" dur="0.9s" begin="0.58s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
       </rect>
-      <text x="1032" y="212" font-family="'Geist Mono','JetBrains Mono',ui-monospace,Consolas,monospace" font-size="13" fill="#a1a1aa">9.3%</text>
+      <text x="1032" y="212" font-family="'Geist Mono','JetBrains Mono',ui-monospace,Consolas,monospace" font-size="13" fill="#a1a1aa">9.0%</text>
     </g>
     <g opacity="0">
       <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.54s" fill="freeze"/>
@@ -65,7 +65,7 @@
       <rect x="600" y="241" width="0" height="6" rx="3" fill="#e34c26">
         <animate attributeName="width" values="0;53.59" dur="0.9s" begin="0.64s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
       </rect>
-      <text x="1032" y="250" font-family="'Geist Mono','JetBrains Mono',ui-monospace,Consolas,monospace" font-size="13" fill="#a1a1aa">6.3%</text>
+      <text x="1032" y="250" font-family="'Geist Mono','JetBrains Mono',ui-monospace,Consolas,monospace" font-size="13" fill="#a1a1aa">6.2%</text>
     </g>
     <g opacity="0">
       <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>
@@ -75,7 +75,7 @@
       <rect x="600" y="279" width="0" height="6" rx="3" fill="#f1e05a">
         <animate attributeName="width" values="0;45.17" dur="0.9s" begin="0.7s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
       </rect>
-      <text x="1032" y="288" font-family="'Geist Mono','JetBrains Mono',ui-monospace,Consolas,monospace" font-size="13" fill="#a1a1aa">5.3%</text>
+      <text x="1032" y="288" font-family="'Geist Mono','JetBrains Mono',ui-monospace,Consolas,monospace" font-size="13" fill="#a1a1aa">5.2%</text>
     </g>
     <g opacity="0">
       <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.66s" fill="freeze"/>
@@ -85,7 +85,7 @@
       <rect x="600" y="317" width="0" height="6" rx="3" fill="#c6538c">
         <animate attributeName="width" values="0;10.83" dur="0.9s" begin="0.76s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
       </rect>
-      <text x="1032" y="326" font-family="'Geist Mono','JetBrains Mono',ui-monospace,Consolas,monospace" font-size="13" fill="#a1a1aa">1.3%</text>
+      <text x="1032" y="326" font-family="'Geist Mono','JetBrains Mono',ui-monospace,Consolas,monospace" font-size="13" fill="#a1a1aa">1.2%</text>
     </g>
   </g>
   <rect x="0.5" y="0.5" width="1199" height="395" rx="16" fill="none" stroke="#27272a"/>
