@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://fabricio-front.vercel.app">
-  <img src="./assets/hero.svg" width="100%" alt="Fabricio Pereira — Software Engineer & AI" />
+  <img src="./assets/hero.25ebc93.svg" width="100%" alt="Fabricio Pereira — Software Engineer & AI" />
 </a>
 
 <br />
@@ -15,7 +15,7 @@
 
 <br />
 
-<img src="./assets/h-sobre.svg" width="100%" alt="Sobre mim" />
+<img src="./assets/h-sobre.980ae77.svg" width="100%" alt="Sobre mim" />
 
 Sou **Software Engineer** com mais de **3,5 anos de experiência** construindo aplicações web robustas, interfaces de alta performance e soluções inteligentes para produtos digitais.
 
@@ -25,19 +25,19 @@ Atualmente atuo como **IA Engineer — Full Stack**, combinando engenharia de so
 
 <br />
 
-<img src="./assets/h-servicos.svg" width="100%" alt="O que eu faço" />
+<img src="./assets/h-servicos.f1c79a1.svg" width="100%" alt="O que eu faço" />
 
-<img src="./assets/services.svg" width="100%" alt="Produtos web completos e escaláveis · Interfaces modernas e responsivas · Arquitetura Full Stack · Integração de IA e AI Agents · Automação de fluxos · Code review, refatoração e performance" />
-
-<br />
-
-<img src="./assets/h-stack.svg" width="100%" alt="Stack principal" />
-
-<img src="./assets/stack-orbit.svg" width="100%" alt="React, Next.js, TypeScript, Tailwind CSS, Node.js, AI Agents, MCP, SQL, Git, Vercel, Claude Code" />
+<img src="./assets/services.0ddebef.svg" width="100%" alt="Produtos web completos e escaláveis · Interfaces modernas e responsivas · Arquitetura Full Stack · Integração de IA e AI Agents · Automação de fluxos · Code review, refatoração e performance" />
 
 <br />
 
-<img src="./assets/h-atividade.svg" width="100%" alt="Atividade" />
+<img src="./assets/h-stack.8272225.svg" width="100%" alt="Stack principal" />
+
+<img src="./assets/stack-orbit.423c116.svg" width="100%" alt="React, Next.js, TypeScript, Tailwind CSS, Node.js, AI Agents, MCP, SQL, Git, Vercel, Claude Code" />
+
+<br />
+
+<img src="./assets/h-atividade.ac8d0c7.svg" width="100%" alt="Atividade" />
 
 <div align="center">
 

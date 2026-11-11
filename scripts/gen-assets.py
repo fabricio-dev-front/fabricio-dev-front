@@ -9,6 +9,7 @@ Uso: python3 scripts/gen-assets.py assets
 import math
 import os
 import random
+import re
 import sys
 
 OUT = sys.argv[1] if len(sys.argv) > 1 else "assets"
@@ -40,11 +41,32 @@ def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
+README = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "README.md")
+
+
 def write(name, body):
-    path = os.path.join(OUT, name)
+    """Salva como <nome>.<hash>.svg e atualiza o README.
+
+    O hash muda sempre que o conteúdo muda, então o cache do GitHub
+    nunca mostra uma versão antiga da imagem.
+    """
+    import glob
+    import hashlib
+    stem = name[:-4]
+    digest = hashlib.sha1(body.encode("utf-8")).hexdigest()[:7]
+    final = f"{stem}.{digest}.svg"
+    for old in glob.glob(os.path.join(OUT, f"{stem}.svg")) + glob.glob(os.path.join(OUT, f"{stem}.???????.svg")):
+        if os.path.basename(old) != final:
+            os.remove(old)
+    path = os.path.join(OUT, final)
     with open(path, "w", encoding="utf-8") as fh:
         fh.write(body)
-    print(f"{name}: {os.path.getsize(path)/1024:.1f} KB")
+    if os.path.exists(README):
+        txt = open(README, encoding="utf-8").read()
+        new = re.sub(rf"(\./{re.escape(os.path.basename(OUT.rstrip('/')))}/){re.escape(stem)}(\.[0-9a-f]{{7}})?\.svg", rf"\g<1>{final}", txt)
+        if new != txt:
+            open(README, "w", encoding="utf-8").write(new)
+    print(f"{final}: {os.path.getsize(path)/1024:.1f} KB")
 
 
 def filters():
