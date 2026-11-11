@@ -11,7 +11,7 @@
       <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
       <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0"/>
     </filter></defs>
-  
+  <g opacity="0" transform="translate(0 20)"><animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.08s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 20;0 0" dur="0.8s" begin="0.08s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.16 1 0.3 1"/>
   <g>
     <rect x="0.5" y="0.5" width="379" height="189" rx="14" fill="#121215" stroke="#27272a"/>
     <rect x="0.5" y="0.5" width="379" height="189" rx="14" fill="none" stroke="#71717a" stroke-width="1.2" stroke-dasharray="110 1030" opacity="0.8">
@@ -25,7 +25,7 @@
     <text x="354" y="50" text-anchor="end" font-family="'Geist Mono','JetBrains Mono',ui-monospace,Consolas,'DejaVu Sans Mono',monospace" font-size="14" fill="#52525b">01</text>
     <text x="26" y="118" font-family="'Geist','Inter','Segoe UI',system-ui,-apple-system,sans-serif" font-weight="600" font-size="22" fill="#fafafa">Produtos Web</text>
     <text x="26" y="148" font-family="'Geist','Inter','Segoe UI',system-ui,-apple-system,sans-serif" font-size="16" fill="#a1a1aa">Produtos web completos e</text><text x="26" y="170" font-family="'Geist','Inter','Segoe UI',system-ui,-apple-system,sans-serif" font-size="16" fill="#a1a1aa">escaláveis, do zero ao deploy.</text>
-  </g>
+  </g></g><g opacity="0" transform="translate(0 20)"><animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.16999999999999998s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 20;0 0" dur="0.8s" begin="0.16999999999999998s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.16 1 0.3 1"/>
   <g>
     <rect x="400.5" y="0.5" width="379" height="189" rx="14" fill="#121215" stroke="#27272a"/>
     <rect x="400.5" y="0.5" width="379" height="189" rx="14" fill="none" stroke="#71717a" stroke-width="1.2" stroke-dasharray="110 1030" opacity="0.8">
@@ -39,7 +39,7 @@
     <text x="754" y="50" text-anchor="end" font-family="'Geist Mono','JetBrains Mono',ui-monospace,Consolas,'DejaVu Sans Mono',monospace" font-size="14" fill="#52525b">02</text>
     <text x="426" y="118" font-family="'Geist','Inter','Segoe UI',system-ui,-apple-system,sans-serif" font-weight="600" font-size="22" fill="#fafafa">Interfaces</text>
     <text x="426" y="148" font-family="'Geist','Inter','Segoe UI',system-ui,-apple-system,sans-serif" font-size="16" fill="#a1a1aa">UI moderna, responsiva e</text><text x="426" y="170" font-family="'Geist','Inter','Segoe UI',system-ui,-apple-system,sans-serif" font-size="16" fill="#a1a1aa">orientada à experiência.</text>
-  </g>
+  </g></g><g opacity="0" transform="translate(0 20)"><animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.26s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 20;0 0" dur="0.8s" begin="0.26s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.16 1 0.3 1"/>
   <g>
     <rect x="800.5" y="0.5" width="379" height="189" rx="14" fill="#121215" stroke="#27272a"/>
     <rect x="800.5" y="0.5" width="379" height="189" rx="14" fill="none" stroke="#71717a" stroke-width="1.2" stroke-dasharray="110 1030" opacity="0.8">
@@ -53,7 +53,7 @@
     <text x="1154" y="50" text-anchor="end" font-family="'Geist Mono','JetBrains Mono',ui-monospace,Consolas,'DejaVu Sans Mono',monospace" font-size="14" fill="#52525b">03</text>
     <text x="826" y="118" font-family="'Geist','Inter','Segoe UI',system-ui,-apple-system,sans-serif" font-weight="600" font-size="22" fill="#fafafa">Full Stack</text>
     <text x="826" y="148" font-family="'Geist','Inter','Segoe UI',system-ui,-apple-system,sans-serif" font-size="16" fill="#a1a1aa">Arquitetura com foco em</text><text x="826" y="170" font-family="'Geist','Inter','Segoe UI',system-ui,-apple-system,sans-serif" font-size="16" fill="#a1a1aa">qualidade e manutenção.</text>
-  </g>
+  </g></g><g opacity="0" transform="translate(0 20)"><animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.35000000000000003s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 20;0 0" dur="0.8s" begin="0.35000000000000003s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.16 1 0.3 1"/>
   <g>
     <rect x="0.5" y="210.5" width="379" height="189" rx="14" fill="#121215" stroke="#27272a"/>
     <rect x="0.5" y="210.5" width="379" height="189" rx="14" fill="none" stroke="#71717a" stroke-width="1.2" stroke-dasharray="110 1030" opacity="0.8">
@@ -67,7 +67,7 @@
     <text x="354" y="260" text-anchor="end" font-family="'Geist Mono','JetBrains Mono',ui-monospace,Consolas,'DejaVu Sans Mono',monospace" font-size="14" fill="#52525b">04</text>
     <text x="26" y="328" font-family="'Geist','Inter','Segoe UI',system-ui,-apple-system,sans-serif" font-weight="600" font-size="22" fill="#fafafa">IA &amp; Agents</text>
     <text x="26" y="358" font-family="'Geist','Inter','Segoe UI',system-ui,-apple-system,sans-serif" font-size="16" fill="#a1a1aa">Integração de IA, AI Agents</text><text x="26" y="380" font-family="'Geist','Inter','Segoe UI',system-ui,-apple-system,sans-serif" font-size="16" fill="#a1a1aa">e MCP em produtos reais.</text>
-  </g>
+  </g></g><g opacity="0" transform="translate(0 20)"><animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.44s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 20;0 0" dur="0.8s" begin="0.44s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.16 1 0.3 1"/>
   <g>
     <rect x="400.5" y="210.5" width="379" height="189" rx="14" fill="#121215" stroke="#27272a"/>
     <rect x="400.5" y="210.5" width="379" height="189" rx="14" fill="none" stroke="#71717a" stroke-width="1.2" stroke-dasharray="110 1030" opacity="0.8">
@@ -81,7 +81,7 @@
     <text x="754" y="260" text-anchor="end" font-family="'Geist Mono','JetBrains Mono',ui-monospace,Consolas,'DejaVu Sans Mono',monospace" font-size="14" fill="#52525b">05</text>
     <text x="426" y="328" font-family="'Geist','Inter','Segoe UI',system-ui,-apple-system,sans-serif" font-weight="600" font-size="22" fill="#fafafa">Automação</text>
     <text x="426" y="358" font-family="'Geist','Inter','Segoe UI',system-ui,-apple-system,sans-serif" font-size="16" fill="#a1a1aa">Automação de fluxos de</text><text x="426" y="380" font-family="'Geist','Inter','Segoe UI',system-ui,-apple-system,sans-serif" font-size="16" fill="#a1a1aa">desenvolvimento e operações.</text>
-  </g>
+  </g></g><g opacity="0" transform="translate(0 20)"><animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.5299999999999999s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 20;0 0" dur="0.8s" begin="0.5299999999999999s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.16 1 0.3 1"/>
   <g>
     <rect x="800.5" y="210.5" width="379" height="189" rx="14" fill="#121215" stroke="#27272a"/>
     <rect x="800.5" y="210.5" width="379" height="189" rx="14" fill="none" stroke="#71717a" stroke-width="1.2" stroke-dasharray="110 1030" opacity="0.8">
@@ -95,5 +95,5 @@
     <text x="1154" y="260" text-anchor="end" font-family="'Geist Mono','JetBrains Mono',ui-monospace,Consolas,'DejaVu Sans Mono',monospace" font-size="14" fill="#52525b">06</text>
     <text x="826" y="328" font-family="'Geist','Inter','Segoe UI',system-ui,-apple-system,sans-serif" font-weight="600" font-size="22" fill="#fafafa">Performance</text>
     <text x="826" y="358" font-family="'Geist','Inter','Segoe UI',system-ui,-apple-system,sans-serif" font-size="16" fill="#a1a1aa">Code review, refatoração</text><text x="826" y="380" font-family="'Geist','Inter','Segoe UI',system-ui,-apple-system,sans-serif" font-size="16" fill="#a1a1aa">e otimização de performance.</text>
-  </g>
+  </g></g>
 </svg>

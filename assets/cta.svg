@@ -17,7 +17,7 @@
   </defs>
   <rect width="1200" height="150" rx="16" fill="#09090b"/>
   <rect x="0.5" y="0.5" width="1199" height="149" rx="16" fill="none" stroke="#27272a"/>
-  <line x1="120" x2="386" y1="75.0" y2="75.0" stroke="url(#l)"/>
+  <g opacity="0" transform="translate(0 16)"><animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.1s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 16;0 0" dur="0.8s" begin="0.1s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.16 1 0.3 1"/><line x1="120" x2="386" y1="75.0" y2="75.0" stroke="url(#l)"/>
   <line x1="814" x2="1080" y1="75.0" y2="75.0" stroke="url(#r)"/>
   <rect x="410" y="43" width="380" height="64" rx="12" fill="#71717a" filter="url(#glowBig)">
     <animate attributeName="opacity" values="0.05;0.18;0.05" dur="3s" repeatCount="indefinite"/>
@@ -31,5 +31,5 @@
   <g transform="translate(706 75.0)" fill="none" stroke="#a1a1aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M-6 0 H6 M1 -5 L6 0 L1 5"/>
     <animateTransform attributeName="transform" type="translate" additive="sum" values="0 0;4 0;0 0" dur="1.4s" repeatCount="indefinite"/>
-  </g>
+  </g></g>
 </svg>

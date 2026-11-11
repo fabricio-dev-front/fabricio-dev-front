@@ -102,6 +102,20 @@ def grid_floor(w, horizon, bottom, vp_x, n_h=14, dur=2.2, k=None, color=Z700):
     return f'<g stroke="{color}" stroke-width="1">' + "".join(out) + "</g>"
 
 
+def enter(content, delay=0.0, dy=14, dx=0, dur=0.8):
+    """Animação de entrada: aparece deslizando e fica (fill=freeze)."""
+    return (f'<g opacity="0" transform="translate({dx} {dy})">'
+            f'<animate attributeName="opacity" values="0;1" dur="{dur}s" begin="{delay}s" fill="freeze"/>'
+            f'<animateTransform attributeName="transform" type="translate" values="{dx} {dy};0 0" dur="{dur}s" '
+            f'begin="{delay}s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.16 1 0.3 1"/>'
+            f'{content}</g>')
+
+
+def fade(content, delay=0.0, dur=0.9):
+    return (f'<g opacity="0"><animate attributeName="opacity" values="0;1" dur="{dur}s" begin="{delay}s" fill="freeze"/>'
+            f'{content}</g>')
+
+
 # ---------------------------------------------------------------- 3D
 def rot(p, ax, ay, az=0.0):
     x, y, z = p
@@ -273,10 +287,8 @@ def hero():
     <rect width="{W}" height="{H}" fill="url(#fadeSides)" opacity="0.7"/>
     <line x1="0" x2="{W}" y1="{HZ}" y2="{HZ}" stroke="url(#horizon)" stroke-width="1"/>
 
-    <!-- planeta wireframe ao fundo -->
-    <g opacity="0.55">{sphere_wire(cx, cy, 128, 30, Z700, 0.9)}</g>
-
-    <!-- objeto 3D -->
+    {fade(f'''<g opacity="0.55">{sphere_wire(cx, cy, 128, 30, Z700, 0.9)}</g>''', 0.2, 1.4)}
+    {enter(f'''    <!-- objeto 3D -->
     <ellipse cx="{cx}" cy="{HZ + 14}" rx="80" ry="7" fill="{Z500}" opacity="0.15" filter="url(#glowBig)">
       <animate attributeName="rx" values="80;62;80" dur="5s" repeatCount="indefinite"/>
     </ellipse>
@@ -293,28 +305,27 @@ def hero():
         <animate attributeName="d" values="{';'.join(cube_d)}" dur="{dur}s" repeatCount="indefinite"/>
       </path>
       {corners}
-    </g>
-
+    </g>''', 0.35, 24, 0, 1.1)}
     <!-- texto -->
     <g font-family="{SANS}">
-      <rect x="70" y="72" width="206" height="28" rx="14" fill="{TAG}" stroke="{BORDER}"/>
+      {enter(f'''<rect x="70" y="72" width="206" height="28" rx="14" fill="{TAG}" stroke="{BORDER}"/>
       <circle cx="88" cy="86" r="4" fill="{GREEN}"><animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/></circle>
       <circle cx="88" cy="86" r="4" fill="none" stroke="{GREEN}"><animate attributeName="r" values="4;9" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0" dur="2s" repeatCount="indefinite"/></circle>
-      <text x="101" y="91" font-size="13" fill="{Z300}">Disponível para projetos</text>
-
+      <text x="101" y="91" font-size="13" fill="{Z300}">Disponível para projetos</text>''', 0.1)}
+      {enter(f'''
       <text x="70" y="160" font-weight="700" font-size="62" letter-spacing="-1.5" textLength="540" lengthAdjust="spacingAndGlyphs" fill="{Z600}" opacity="0.6">{name}{glitch}</text>
       <text x="70" y="160" font-weight="700" font-size="62" letter-spacing="-1.5" textLength="540" lengthAdjust="spacingAndGlyphs" fill="url(#nameGrad)">{name}</text>
       <g clip-path="url(#nameClip)">
         <rect y="90" width="120" height="90" fill="url(#shine)" opacity="0.18" transform="skewX(-20)">
           <animate attributeName="x" values="-200;900;900" keyTimes="0;0.4;1" dur="5s" repeatCount="indefinite"/>
         </rect>
-      </g>
+      </g>''', 0.2, 18)}
     </g>
-    <g font-family="{MONO}">
+    <g font-family="{MONO}">{enter(f'''
       <text x="{tx}" y="{ty}" font-size="{fs}" fill="{Z600}" textLength="{f(cw)}" lengthAdjust="spacingAndGlyphs">&gt;</text>
       {''.join(texts)}
-      {cursor}
-      {''.join(tag_svg)}
+      {cursor}''', 0.45)}
+      {enter(''.join(tag_svg), 0.6)}
     </g>
     <rect width="{W}" height="{H}" filter="url(#noise)"/>
   </g>
@@ -336,12 +347,12 @@ def header(file, idx, title):
   </defs>
   <rect width="{W}" height="{H}" rx="12" fill="{BG}"/>
   <rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="12" fill="none" stroke="{BORDER}"/>
-  <text x="24" y="40" font-family="{MONO}" font-size="15" fill="{Z600}">{idx}</text>
+  {enter(f'''<text x="24" y="40" font-family="{MONO}" font-size="15" fill="{Z600}">{idx}</text>
   <text x="56" y="40" font-family="{MONO}" font-size="15" fill="{Z600}">/</text>
   <text x="{x0 - 20}" y="42" font-family="{SANS}" font-weight="600" font-size="26" letter-spacing="-0.5" fill="{FG}" textLength="{f(tw)}" lengthAdjust="spacingAndGlyphs">{esc(title)}
     <animate attributeName="opacity" values="1;0.55;1;1" keyTimes="0;0.02;0.04;1" dur="5s" repeatCount="indefinite"/>
   </text>
-  <line x1="{f(x0 + tw + 20)}" x2="{W - 24}" y1="33" y2="33" stroke="url(#ln)"/>
+  <line x1="{f(x0 + tw + 20)}" x2="{W - 24}" y1="33" y2="33" stroke="url(#ln)"/>''', 0.05, 0, -16, 0.7)}
   <circle cy="33" r="2.5" fill="{Z500}" filter="url(#glow)">
     <animate attributeName="cx" values="{f(x0 + tw + 20)};{W - 24}" dur="3.5s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="1;0" dur="3.5s" repeatCount="indefinite"/>
@@ -378,7 +389,7 @@ def cards():
     for i, (num, title, lines, icon) in enumerate(items):
         x = (i % 3) * (cwid + gap)
         y = (i // 3) * (chei + gap)
-        out.append(f"""
+        out.append(enter(f"""
   <g>
     <rect x="{x + 0.5}" y="{y + 0.5}" width="{cwid - 1}" height="{chei - 1}" rx="14" fill="{CARD}" stroke="{BORDER}"/>
     <rect x="{x + 0.5}" y="{y + 0.5}" width="{cwid - 1}" height="{chei - 1}" rx="14" fill="none" stroke="{Z500}" stroke-width="1.2" stroke-dasharray="110 {per - 110}" opacity="0.8">
@@ -392,7 +403,7 @@ def cards():
     <text x="{x + cwid - 26}" y="{y + 50}" text-anchor="end" font-family="{MONO}" font-size="14" fill="{Z600}">{num}</text>
     <text x="{x + 26}" y="{y + 118}" font-family="{SANS}" font-weight="600" font-size="22" fill="{FG}">{esc(title)}</text>
     {''.join(f'<text x="{x + 26}" y="{y + 148 + j * 22}" font-family="{SANS}" font-size="16" fill="{MUTED}">{esc(l)}</text>' for j, l in enumerate(lines))}
-  </g>""")
+  </g>""", 0.08 + i * 0.09, 20))
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Produtos web, Interfaces, Full Stack, IA e Agents, Automação, Performance">
   <defs>{filters()}</defs>
   {''.join(out)}
@@ -464,16 +475,14 @@ def orbit():
     <rect width="{W}" height="{H}" fill="{BG}"/>
     <rect width="{W}" height="{H}" fill="url(#bg)"/>
     <g>{stars(W, H, 60)}</g>
-    {''.join(back_r)}
-    {''.join(back_l)}
-    <circle cx="{cx}" cy="{cy}" r="{R + 20}" fill="{Z500}" opacity="0.08" filter="url(#glowBig)">
+    {fade(''.join(back_r) + ''.join(back_l), 0.35, 1.2)}
+    {enter(f'''<circle cx="{cx}" cy="{cy}" r="{R + 20}" fill="{Z500}" opacity="0.08" filter="url(#glowBig)">
       <animate attributeName="opacity" values="0.04;0.1;0.04" dur="4s" repeatCount="indefinite"/>
     </circle>
     <circle cx="{cx}" cy="{cy}" r="{R}" fill="url(#core)" stroke="{Z700}"/>
     {sphere_wire(cx, cy, R, 8, Z500, 0.45)}
-    <text x="{cx}" y="{cy + 9}" text-anchor="middle" font-family="{MONO}" font-size="26" font-weight="600" fill="{FG}">&lt;/&gt;</text>
-    {''.join(front_r)}
-    {''.join(front_l)}
+    <text x="{cx}" y="{cy + 9}" text-anchor="middle" font-family="{MONO}" font-size="26" font-weight="600" fill="{FG}">&lt;/&gt;</text>''', 0.1, 18)}
+    {fade(''.join(front_r) + ''.join(front_l), 0.35, 1.2)}
     <rect width="{W}" height="{H}" filter="url(#noise)"/>
   </g>
   <rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="16" fill="none" stroke="{BORDER}"/>
@@ -495,7 +504,7 @@ def cta():
   </defs>
   <rect width="{W}" height="{H}" rx="16" fill="{BG}"/>
   <rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="16" fill="none" stroke="{BORDER}"/>
-  <line x1="120" x2="{f(bx - 24)}" y1="{H / 2}" y2="{H / 2}" stroke="url(#l)"/>
+  {enter(f'''<line x1="120" x2="{f(bx - 24)}" y1="{H / 2}" y2="{H / 2}" stroke="url(#l)"/>
   <line x1="{f(bx + bw + 24)}" x2="{W - 120}" y1="{H / 2}" y2="{H / 2}" stroke="url(#r)"/>
   <rect x="{f(bx)}" y="{f(by)}" width="{bw}" height="{bh}" rx="12" fill="{Z500}" filter="url(#glowBig)">
     <animate attributeName="opacity" values="0.05;0.18;0.05" dur="3s" repeatCount="indefinite"/>
@@ -509,7 +518,7 @@ def cta():
   <g transform="translate({f(W / 2 + 106)} {H / 2})" fill="none" stroke="{MUTED}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M-6 0 H6 M1 -5 L6 0 L1 5"/>
     <animateTransform attributeName="transform" type="translate" additive="sum" values="0 0;4 0;0 0" dur="1.4s" repeatCount="indefinite"/>
-  </g>
+  </g>''', 0.1, 16)}
 </svg>"""
     write("cta.svg", svg)
 
@@ -531,7 +540,7 @@ def footer():
     <g clip-path="url(#fc)">{grid_floor(W, HZ, H, W / 2, n_h=12, dur=2.6, k=110)}<rect y="{HZ}" width="{W}" height="{H - HZ}" fill="url(#fade)"/></g>
     <rect width="{W}" height="{H}" fill="url(#sides)"/>
     <line x1="0" x2="{W}" y1="{HZ}" y2="{HZ}" stroke="url(#hz)"/>
-    <text x="{W / 2}" y="44" text-anchor="middle" font-family="{SANS}" font-size="18" fill="{MUTED}">Construindo software com intenção, qualidade e impacto.</text>
+    {enter(f'''<text x="{W / 2}" y="44" text-anchor="middle" font-family="{SANS}" font-size="18" fill="{MUTED}">Construindo software com intenção, qualidade e impacto.</text>''', 0.15, 12)}
     <text x="{W / 2}" y="{H - 26}" text-anchor="middle" font-family="{MONO}" font-size="12" letter-spacing="2" fill="{Z500}">© 2026 FABRICIO PEREIRA</text>
   </g>
   <rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="16" fill="none" stroke="{BORDER}"/>
