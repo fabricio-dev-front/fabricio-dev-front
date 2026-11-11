@@ -78,6 +78,7 @@ def filters():
     <filter id="glowBig" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="14"/>
     </filter>
+    <radialGradient id="halo"><stop offset="0" stop-color="#a1a1aa" stop-opacity="0.35"/><stop offset="0.45" stop-color="#a1a1aa" stop-opacity="0.12"/><stop offset="1" stop-color="#a1a1aa" stop-opacity="0"/></radialGradient>
     <filter id="noise" x="0" y="0" width="100%" height="100%">
       <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
       <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0"/>
@@ -309,25 +310,25 @@ def hero():
     <rect width="{W}" height="{H}" fill="url(#fadeSides)" opacity="0.7"/>
     <line x1="0" x2="{W}" y1="{HZ}" y2="{HZ}" stroke="url(#horizon)" stroke-width="1"/>
 
-    {fade(f'''<g opacity="0.55">{sphere_wire(cx, cy, 128, 30, Z700, 0.9)}</g>''', 0.2, 1.4)}
-    {enter(f'''    <!-- objeto 3D -->
-    <ellipse cx="{cx}" cy="{HZ + 14}" rx="80" ry="7" fill="{Z500}" opacity="0.15" filter="url(#glowBig)">
+    {fade(f'''<g opacity="0.55">{sphere_wire(cx, cy, 128, 30, Z700, 0.9)}</g>''', 0.2, 0.9)}
+    {fade(f'''    <!-- objeto 3D -->
+    <ellipse cx="{cx}" cy="{HZ + 14}" rx="90" ry="14" fill="url(#halo)">
       <animate attributeName="rx" values="80;62;80" dur="5s" repeatCount="indefinite"/>
     </ellipse>
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0;0 -9;0 0" dur="5s" repeatCount="indefinite"/>
-      <circle cx="{cx}" cy="{cy}" r="70" fill="{Z500}" opacity="0.08" filter="url(#glowBig)"/>
+      <circle cx="{cx}" cy="{cy}" r="110" fill="url(#halo)" opacity="0.5"/>
       <ellipse cx="{cx}" cy="{cy}" rx="168" ry="30" fill="none" stroke="{Z600}" stroke-width="1" stroke-dasharray="2 8" transform="rotate(-10 {cx} {cy})">
         <animate attributeName="stroke-dashoffset" values="0;-100" dur="4s" repeatCount="indefinite"/>
       </ellipse>
       <path d="{octa_d[0]}" fill="none" stroke="{Z600}" stroke-width="1.1">
         <animate attributeName="d" values="{';'.join(octa_d)}" dur="{dur}s" repeatCount="indefinite"/>
       </path>
-      <path d="{cube_d[0]}" fill="none" stroke="{Z300}" stroke-width="1.4" stroke-linecap="round" stroke-opacity="0.75" filter="url(#glow)">
+      <path d="{cube_d[0]}" fill="none" stroke="{Z300}" stroke-width="1.4" stroke-linecap="round" stroke-opacity="0.8">
         <animate attributeName="d" values="{';'.join(cube_d)}" dur="{dur}s" repeatCount="indefinite"/>
       </path>
       {corners}
-    </g>''', 0.35, 24, 0, 1.1)}
+    </g>''', 0.3, 0.9)}
     <!-- texto -->
     <g font-family="{SANS}">
       {enter(f'''<rect x="70" y="72" width="206" height="28" rx="14" fill="{TAG}" stroke="{BORDER}"/>
@@ -349,7 +350,6 @@ def hero():
       {cursor}''', 0.45)}
       {enter(''.join(tag_svg), 0.6)}
     </g>
-    <rect width="{W}" height="{H}" filter="url(#noise)"/>
   </g>
   <rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="16" fill="none" stroke="{BORDER}"/>
 </svg>"""
@@ -375,7 +375,7 @@ def header(file, idx, title):
     <animate attributeName="opacity" values="1;0.55;1;1" keyTimes="0;0.02;0.04;1" dur="5s" repeatCount="indefinite"/>
   </text>
   <line x1="{f(x0 + tw + 20)}" x2="{W - 24}" y1="33" y2="33" stroke="url(#ln)"/>''', 0.05, 0, -16, 0.7)}
-  <circle cy="33" r="2.5" fill="{Z500}" filter="url(#glow)">
+  <circle cy="33" r="2.5" fill="{Z500}">
     <animate attributeName="cx" values="{f(x0 + tw + 20)};{W - 24}" dur="3.5s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="1;0" dur="3.5s" repeatCount="indefinite"/>
   </circle>
@@ -476,7 +476,7 @@ def orbit():
             body = (
                 f'<rect x="{f(-w / 2)}" y="-16" width="{f(w)}" height="32" rx="8" fill="{CARD}"/>'
                 f'<rect x="{f(-w / 2)}" y="-16" width="{f(w)}" height="32" rx="8" fill="{col}" fill-opacity="0.08" stroke="{col}" stroke-opacity="0.55"/>'
-                f'<circle cx="{f(-w / 2 + 16)}" cy="0" r="7" fill="{col}" opacity="0.35" filter="url(#glow)"/>'
+                f'<circle cx="{f(-w / 2 + 16)}" cy="0" r="10" fill="url(#h{col[1:]})"/>'
                 f'<circle cx="{f(-w / 2 + 16)}" cy="0" r="4" fill="{col}"/>'
                 f'<text x="8" y="5.5" text-anchor="middle" font-family="{SANS}" font-size="15" font-weight="500" fill="#e4e4e7">{esc(txt)}</text>'
             )
@@ -490,6 +490,7 @@ def orbit():
     R = 64
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Stack: React, Next.js, TypeScript, Tailwind, Node.js, AI Agents, MCP, SQL, Git, Vercel, Claude Code">
   <defs>{filters()}
+    {''.join(f'<radialGradient id="h{c[1:]}"><stop offset="0" stop-color="{c}" stop-opacity="0.55"/><stop offset="1" stop-color="{c}" stop-opacity="0"/></radialGradient>' for c in sorted({c for o in orbits for _, c in o["labels"]}))}
     <radialGradient id="core" cx="0.35" cy="0.3" r="0.8">
       <stop offset="0" stop-color="#3f3f46"/><stop offset="0.6" stop-color="#18181b"/><stop offset="1" stop-color="{BG}"/>
     </radialGradient>
@@ -502,15 +503,14 @@ def orbit():
     <rect width="{W}" height="{H}" fill="{BG}"/>
     <rect width="{W}" height="{H}" fill="url(#bg)"/>
     <g>{stars(W, H, 60)}</g>
-    {fade(''.join(back_r) + ''.join(back_l), 0.35, 1.2)}
-    {enter(f'''<circle cx="{cx}" cy="{cy}" r="{R + 20}" fill="{Z500}" opacity="0.08" filter="url(#glowBig)">
-      <animate attributeName="opacity" values="0.04;0.1;0.04" dur="4s" repeatCount="indefinite"/>
+    {fade(''.join(back_r) + ''.join(back_l), 0.3, 0.7)}
+    {fade(f'''<circle cx="{cx}" cy="{cy}" r="{R + 60}" fill="url(#halo)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" repeatCount="indefinite"/>
     </circle>
     <circle cx="{cx}" cy="{cy}" r="{R}" fill="url(#core)" stroke="{Z700}"/>
     {sphere_wire(cx, cy, R, 8, Z500, 0.45)}
-    <text x="{cx}" y="{cy + 9}" text-anchor="middle" font-family="{MONO}" font-size="26" font-weight="600" fill="{FG}">&lt;/&gt;</text>''', 0.1, 18)}
-    {fade(''.join(front_r) + ''.join(front_l), 0.35, 1.2)}
-    <rect width="{W}" height="{H}" filter="url(#noise)"/>
+    <text x="{cx}" y="{cy + 9}" text-anchor="middle" font-family="{MONO}" font-size="26" font-weight="600" fill="{FG}">&lt;/&gt;</text>''', 0.1, 0.7)}
+    {fade(''.join(front_r) + ''.join(front_l), 0.3, 0.7)}
   </g>
   <rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="16" fill="none" stroke="{BORDER}"/>
 </svg>"""
