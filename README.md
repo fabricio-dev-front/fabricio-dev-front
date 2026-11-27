@@ -37,14 +37,14 @@ Atualmente atuo como **IA Engineer — Full Stack**, combinando engenharia de so
 
 <br />
 
-<img src="./assets/h-atividade.a1d38dd.svg" width="100%" alt="Atividade" />
+<!-- <img src="./assets/h-atividade.a1d38dd.svg" width="100%" alt="Atividade" /> -->
 
-<div align="center">
+<!-- <div align="center"> -->
 
-<img src="./dist/languages.svg" width="100%" alt="Todas as linguagens usadas nos meus repositórios" />
+<!-- <img src="./dist/languages.svg" width="100%" alt="Todas as linguagens usadas nos meus repositórios" /> -->
 
-<img src="./dist/snake-green.svg" width="100%" alt="Cobrinha comendo o gráfico de contribuições" />
+<!-- <img src="./dist/snake-green.svg" width="100%" alt="Cobrinha comendo o gráfico de contribuições" /> -->
 
-</div>
+<!-- </div> -->
 
 <!-- A cobrinha e o gráfico de linguagens são gerados pelo workflow .github/workflows/profile-3d.yml -->
